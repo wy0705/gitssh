@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--开发驼峰格式与下划线格式对应-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--关闭通过变量名替换sql语句中的参数，本人没有过多深入了解此参数-->
+        <setting name="useActualParamName" value="false"/>
+    </settings>
+</configuration>

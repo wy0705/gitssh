@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="tank.mapper.UserMapper">
+
+    <insert id="create" keyProperty="id">
+        insert into user(username, password) value (#{0}, #{1})
+    </insert>
+
+    <select id="auth" resultType="Map">
+        select id, username from user where username = #{0} and password = #{1}
+    </select>
+
+</mapper>

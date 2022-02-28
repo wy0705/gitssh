@@ -1,0 +1,29 @@
+body,ul,li,p {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+li {
+	list-style-type: none;
+}
+canvas {
+	background: black;
+	border: 10px solid #ccc;
+}
+#notice {
+	width: calc(100% - 1020px);
+	height: calc(500px + 17px);
+	border-top: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.score {
+	padding: 10px;
+	font-size: large;
+}
+.score span {
+	margin-right: 10px;
+}

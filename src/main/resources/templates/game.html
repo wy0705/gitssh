@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>坦克大战</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/game.css">
+</head>
+<body>
+<canvas id="canvas" width="1000" height="500"></canvas>
+<div id="notice"></div>
+<div class="score">
+	用户名：<span th:text="${session.username}"></span>
+	颜色：<span th:text="${color}"></span>
+	分数：<span id="score"></span>
+	<span style="margin-left:300px">服务器：</span><span id="service"></span>
+</div>
+<script type="text/javascript">
+	var myColor = "[[ ${color} ]]", //我的颜色
+		myId = [[ ${session.id} ]], //我的id
+		myName = "[[ ${session.username} ]]"; //我的用户名
+</script>
+<!--websocket通信-->
+<script type="text/javascript" src="/js/ws.js"></script>
+<!--坦克、子弹对象-->
+<script type="text/javascript" src="/js/tank.js"></script>
+<!--操作-->
+<script type="text/javascript" src="/js/game.js"></script>
+</body>
+</html>

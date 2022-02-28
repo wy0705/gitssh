@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>个人中心</title>
+	<meta charset="utf-8">
+</head>
+<body>
+id：<span th:text="${id}"></span><br>
+用户名：<span th:text="${username}"></span>
+<form action="/game">
+	<label>选择颜色</label>
+	<select name="color">
+		<option value="red">红</option>
+		<option value="green">绿</option>
+		<option value="blue">蓝</option>
+		<option value="purple">紫</option>
+		<option value="gray">灰</option>
+		<option value="cyan">青</option>
+		<option value="yellow">黄</option>
+		<option value="orange">橙</option>
+	</select>
+	<button>确定</button>
+</form>
+</body>
+</html>
